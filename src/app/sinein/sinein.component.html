@@ -1,0 +1,30 @@
+<!-- <p>sinein works!</p> -->
+<!-- <br><br> -->
+<div id="sel">
+    <div id="sel1">
+        <div id='status'>{{mess}}</div>
+        <div id='status'><b>{{check}}</b></div>
+        <div id='status'><b>{{checkData}}</b></div>
+        <h3>Facebook Sine-in</h3>
+        <form (ngSubmit)="onSinein()" #formref='ngForm'>
+            <div>
+                <mat-form-field class="in">
+                <input type="email" [(ngModel)]='email' name="email" placeholder="enter email" matInput (change)="onChange()" required>
+                </mat-form-field>
+            </div>
+
+            <div>
+            <mat-form-field class="in">
+                <input type="password" [(ngModel)]='password' name="password" placeholder="enter password" matInput required>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <button type="submit" mat-raised-button color="primary" [disabled]='formref.invalid'>Sine-in</button>&nbsp;&nbsp;
+                <button type="reset" mat-raised-button color="warn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- <app-validation [value]='setValue'></app-validation> -->

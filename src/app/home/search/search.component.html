@@ -1,0 +1,41 @@
+<!-- <p>search works!</p> -->
+<div id="sel">
+    <div id='for'> 
+        <div>{{mess}}</div>
+    <form (ngSubmit)='onSearch()'> 
+        <div>
+            <mat-form-field>
+            <input type="email" placeholder="search by email" matInput [(ngModel)]='email' name='email' (change)='onChange()'>
+        </mat-form-field>
+        </div>
+        <div>
+            <button type="submit" mat-flat-button color="accent">Search</button>&nbsp;&nbsp;
+            <button type="reset" mat-flat-button color="warn" (click)='onChange()'>Cancel</button>
+        </div>
+    </form>
+</div>
+    <br>
+    <div *ngIf='check'>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email Id</th>
+                    <th>Phone Number</th>
+                    <th>DOB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{addData.firstName}}</td>
+                    <td>{{addData.lastName}}</td>
+                    <td>{{addData.email}}</td>
+                    <td>{{addData.mobile}}</td>
+                    <td>{{addData.dob}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- {{addData | json}} -->

@@ -1,0 +1,17 @@
+#sel{
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 3%;
+}
+#for{
+    border: 2px solid cornflowerblue;
+    width: 80%;
+    padding: 5%;
+    margin-left: 10%;
+}
+mat-form-field{
+    width:80%;
+}
+form{
+    margin-left: 10%;
+}

@@ -1,0 +1,53 @@
+<!-- <p>sineup works!</p> -->
+<br>
+<div id="sel">
+    <div id="sel1">
+        {{status}}
+        <form [formGroup]='sineupGroup' (ngSubmit)="onSubmit()" >
+
+            <div >
+                <mat-form-field class="example-full-width">
+                <input type='text' placeholder="firstname"  (change)="onChange()" formControlName='firstName' matInput >
+               </mat-form-field>
+            </div>
+             
+    
+            <div>
+                <mat-form-field class="example-full-width">
+                <input type='text' placeholder="lastname" formControlName='lastName' matInput>
+                </mat-form-field>
+            </div>
+
+            <div >
+                <mat-form-field class="example-full-width">
+                <input type="text" placeholder="email id" formControlName='email' matInput>
+            </mat-form-field>
+            </div>
+
+            <div >
+                <mat-form-field class="example-full-width">
+                <input type="text" placeholder="mobile number" formControlName='mobile' matInput>
+            </mat-form-field>
+            </div>
+
+            <div >
+                <mat-form-field class="example-full-width">
+                <input type='date' placeholder="DOB" formControlName='dob' matInput>
+            </mat-form-field>
+            </div>
+
+            <div >
+                <mat-form-field class="example-full-width">
+                <input type="password" placeholder="password" formControlName='password' matInput>
+            </mat-form-field>
+            </div>
+
+            <div >
+                <button type="submit"  mat-raised-button color="primary">Submit</button> &nbsp;&nbsp;
+                <button type='reset' mat-raised-button color="warn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- <app-validation (valueCheck)="onCheck($event)"></app-validation> -->

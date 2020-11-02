@@ -1,0 +1,24 @@
+<!-- <p>gethistory works!</p> -->
+<br>
+<div id='sel'>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email Id</th>
+                <th>Phone Number</th>
+                <th>DOB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let j of dataList'>
+                <td>{{j.firstName}}</td>
+                <td>{{j.lastName}}</td>
+                <td>{{j.email}}</td>
+                <td>{{j.mobile}}</td>
+                <td>{{j.dob}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

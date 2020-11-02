@@ -1,0 +1,45 @@
+<!-- <p>add works!</p> -->
+<div id="space1">
+<div id='space2'>
+<form [formGroup]='formGroup' (ngSubmit)='onSubmit()'>
+<div>
+    <mat-form-field id ='sel'>
+    <input type="text" placeholder="enter firstname" formControlName="firstName" matInput >
+</mat-form-field>
+</div>
+<div>
+<mat-form-field id ='sel'>
+    <input type="text" placeholder="enter lastname" formControlName="lastName" matInput >
+</mat-form-field>
+</div>
+
+<div>
+<mat-form-field id ='sel'>
+    <input type="email" placeholder="enter email" formControlName="email" matInput >
+</mat-form-field>
+</div>
+<div>
+<mat-form-field id ='sel'>
+    <input type="text" placeholder="enter phone number" formControlName="mobile" matInput >
+</mat-form-field>
+</div>
+<div>
+    <mat-form-field id ='sel'>
+        <input type="date" placeholder="select DOB" formControlName="dob" matInput >
+    </mat-form-field>
+    </div>
+<div>
+    <mat-form-field id ='sel'>
+        <input type="password" placeholder="enter password" formControlName="password" matInput >
+    </mat-form-field>
+    </div>
+<div>
+    <button type="submit" mat-raised-button color="primary" [disabled]='formGroup.invalid'>Submit</button>&nbsp;&nbsp;
+    <button type="reset" mat-raised-button color="warn">Cancel</button>
+</div>
+
+</form>
+</div>
+</div>
+
+<div> {{addData | json}}</div>

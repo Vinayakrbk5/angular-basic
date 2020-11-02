@@ -1,0 +1,17 @@
+<!-- <p>home works!</p> -->
+
+<div>
+    <span>Welcome &nbsp;&nbsp;<b style="color:firebrick;font-size: 130%;">{{name}}</b></span>&nbsp;&nbsp;
+    <!-- <button (click)='add()' mat-button>Add</button>&nbsp;&nbsp; -->
+    <!-- <button mat-button (click)=logout()>Logout</button> -->
+    &nbsp;&nbsp;
+        <mat-button-toggle-group >
+            <mat-button-toggle  (click)='add()' mat-button > &nbsp;&nbsp;Add</mat-button-toggle>&nbsp;&nbsp;
+            <mat-button-toggle (click)='search()'>Search</mat-button-toggle>&nbsp;&nbsp;
+            <mat-button-toggle (click)='getHistory()'>Get-History</mat-button-toggle>&nbsp;&nbsp;
+            <mat-button-toggle (click)='logout()'>Logout</mat-button-toggle>
+        </mat-button-toggle-group>
+</div>
+<hr>
+
+<router-outlet></router-outlet>

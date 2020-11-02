@@ -1,0 +1,21 @@
+#sel{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 5%;
+    
+}
+
+#sel1{
+    margin-right: 10%;
+    margin-left: 5%;
+    padding:5%;
+    width:100%;
+    background-color: mediumspringgreen;
+}
+.in{
+    width: 100%;
+}
+#status{
+    color: red;
+    text-align: center;
+}

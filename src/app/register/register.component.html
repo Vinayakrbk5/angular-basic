@@ -1,0 +1,36 @@
+<p>register works!</p>
+<div class="mat-display-2">Welcome to India</div>
+<button mat-raised-button color="primary">Vinayak</button>&nbsp;&nbsp;
+<button mat-button color="accent">Vinayak</button>&nbsp;&nbsp;
+<button mat-flat-button color="warn" disableRipple>Vinayak</button>&nbsp;&nbsp;
+<button mat-stroked-button color="warn" >Vinayak</button>
+<mat-button-toggle #ref value="Kusuma">Sahana</mat-button-toggle>{{ref.value}}
+<br>
+<div>
+    <mat-button-toggle-group #refer="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="Sahana" (click)='onClick()'>Sahana</mat-button-toggle>
+        <mat-button-toggle value="Vinayak">Vinayak</mat-button-toggle>
+        <mat-button-toggle value="Kashi">Kashi</mat-button-toggle>
+    </mat-button-toggle-group>{{refer.value}}
+</div>
+
+<form class="example-form" (ngSubmit)="onSubmit()">
+    <div>
+    <mat-form-field class="example-full-width">
+        <label>Enter Full Name :</label>
+      <input matInput type="text" [(ngModel)]="regData.fullName" name='fname'>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="example-full-width">
+        <label>Enter Email :</label>
+      <input matInput  type="text" [(ngModel)]="regData.email" name='email'>
+    </mat-form-field>
+  </div>
+
+  <div>
+      <button mat-raised-button color="warn" type="submit">Submit</button>
+  </div>
+</form>
+    
